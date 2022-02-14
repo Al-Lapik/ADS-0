@@ -6,10 +6,11 @@ int gcd(int a, int b) {
         a = b;
         b = temp;
     }
+
     int r = a % b;
-    if (r == 0)
+    if (r == 0) {
         return b;
-    else {
+    } else {
         a = b;
         b = r;
         return gcd(a, b);
