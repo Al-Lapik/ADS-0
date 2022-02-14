@@ -8,7 +8,9 @@ int gcd(int a, int b) {
     }
 
     int r = a % b;
-    if (r == 0) return b;
+    if (r == 0) {
+        return b;
+    }
     else {
         a = b;
         b = r;
